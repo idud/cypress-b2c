@@ -3,6 +3,8 @@ import { onFormLayoutsPage } from "../../../support/page_objects/formLayoutPage"
 import { navigateTo, onNavigationPage } from "../../../support/page_objects/navigationPage"
 import { onSmartTablePage } from "../../../support/page_objects/smartTablePage"
 
+
+//menggunakan source support/page_objects
 describe('Test with Page Objects', () => {
 
     beforeEach('Open Applicartion', () => {
