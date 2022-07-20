@@ -1,0 +1,8 @@
+Running cypress headless
+
+bisa menggunakan command : 
+npx cypress run
+npx cypress run --browser chrome
+
+git config --list (untuk melihat config yang ada)
+git init (untuk inisial menjadikan code ke dalam git)

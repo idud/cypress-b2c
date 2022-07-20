@@ -1,7 +1,7 @@
 
-function selectDayFromCurrent(day) {
+function selectDayFromCurrent(days) {
     let date = new Date()
-    date.setDate(date.getDate() + day)
+    date.setDate(date.getDate() + days)
     let futureDay = date.getDate()
     let futureMonth = date.toLocaleString('default', {
         month: 'short'
@@ -15,7 +15,7 @@ function selectDayFromCurrent(day) {
         if (!dateAttribute.includes(futureMonth)) {
             cy.get('[data-name="chevron-right"]').click()
             //cy.get('nb-calendar-day-picker [class="day-cell ng-star-inserted"]').contains(futureDay).click()
-            selectDayFromCurrent(day)
+            selectDayFromCurrent(days)
         } else {
             // jika tanggal saat ini include current month langsung click tanggal ybs
             cy.get('.day-cell').not('bounding-month').contains(futureDay).click()
