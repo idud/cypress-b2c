@@ -6,4 +6,4 @@ npx cypress run --browser chrome
 
 git config --list (untuk melihat config yang ada)
 git init (untuk inisial menjadikan code ke dalam git)
-test
+test test
